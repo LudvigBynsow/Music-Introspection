@@ -9,3 +9,11 @@
 </svelte:head>
 
 {@render children()}
+
+
+<style>
+
+	:global(body){
+		margin: 0;
+	}
+</style>
