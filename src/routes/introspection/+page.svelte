@@ -13,7 +13,7 @@
     function updateHighScore() {
         if (score > highScore) {
             highScore = score;
-            localStorage.setItem('highScore', JSON.stringify({score:highScore,user:session.name})); // Save high score to localStorage
+            localStorage.setItem('highScore', JSON.stringify({score: highScore, user: session.name})); // Save high score to localStorage
         }
     }
 
@@ -59,7 +59,7 @@
     let tracks;
     onMount(async () => {
         highScore = JSON.parse(localStorage.getItem('highScore'))?.score || 0; // Load high score from localStorage
-        let highScoreUser = JSON.parse(localStorage.getItem('highScore'))?.user || 'Unknown'; // Load high score from localStorage
+        //let highScoreUser = JSON.parse(localStorage.getItem('highScore'))?.user || 'Unknown'; // Load high score from localStorage
 
         if (session) {
             const response = await getTracks(session);

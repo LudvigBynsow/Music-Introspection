@@ -91,9 +91,11 @@ export async function load_user(){
     </div>
     </a>
 
-    <div class="tabs">
+    <a class="tabs" href="leaderboard">
+    <div>
         Leaderboard
     </div>
+    </a>
 
 </section>
 </main>
